@@ -6,8 +6,11 @@ Made for [BDSX](https://github.com/BDSX/BDSX)
 Simply run `npm i @bdsx/bdsx-placeholderapi`
 
 # What is this?
-Placeholder API on Java edition is a plugin that creates a standard for variables in strings. For example, you can use `%username%` in a string and that would be replaced by the users name.
+Placeholder API on Java edition is a plugin that creates a standard for variables in strings. For example, you can use `%player_name%` in a string and that would be replaced by the users name.
 It also easily allows for other creators to add their own placeholders that can be used by other plugins.
+
+Note: By itself, this plugin does not do anything. It is meant to be used by other plugins.
+An example script for this plugin can be found [here](TODO: add link)
 
 # How does it work?
 After you create a string, you will put it through the setPlaceholders function.
@@ -16,7 +19,7 @@ Creators can also register their own Placeholders by using the `registerPlacehol
 
 Using a placeholder Example:
 ```ts
-let str = "Welcome to the server %username%!";
+let str = "Welcome to the server %player_name%!";
 let result = setPlaceholders(str, Player);
 sendMessage(result, Player);
 ```
